@@ -1,0 +1,139 @@
+body {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  font-family: system-ui, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* upper side  */
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title p {
+  font-size: 25px;
+  padding-left: 12px;
+}
+.icon-title {
+  padding-top: 25px;
+}
+
+/* input numbers  */
+
+.inputNum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 70px;
+  padding-right: 12px;
+  height: 100px;
+  width: auto;
+  padding-bottom: 110px;
+}
+
+.inputNum2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.inputNum > p {
+  color: #858585;
+  align-items: flex-end;
+  font-size: 17px;
+  padding-right: 12px;
+}
+
+/* body -keyboard  */
+
+.first-row,
+.second-row,
+.third-row,
+.final-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.first-row > button {
+  flex: 50%;
+  background-color: #353535;
+  color: white;
+  height: 100px;
+  width: 130px;
+  margin: 1px;
+  font-size: 25px;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.second-row > button {
+  flex: 50%;
+  background-color: #353535;
+  color: white;
+  margin: 1px;
+  height: 100px;
+  width: 130px;
+  font-size: 19px;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.third-row > button {
+  flex: 50%;
+  background-color: #464646;
+  color: white;
+  margin: 1px;
+  height: 100px;
+  width: 130px;
+  font-size: 19px;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.third-row > .last-box {
+  background-color: #353535;
+  color: white;
+  margin: 1px;
+  height: 100px;
+  width: 130px;
+  font-size: 19px;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.final-row > button {
+  flex: 50%;
+  background-color: #464646;
+  color: white;
+  margin: 1px;
+  height: 100px;
+  width: 130px;
+  font-size: 19px;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.final-row > .last-box {
+  background-color: #ff808c;
+  color: black;
+  margin: 1px;
+  height: 100px;
+  width: 130px;
+  font-size: 30px;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.inputFeild {
+  background-color: transparent;
+  color: #757575;
+  font-size: 19px;
+  border-style: none;
+  text-align: end;
+  pointer-events: none;
+}

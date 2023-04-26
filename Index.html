@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">
+        <div>
+          <p>Standard</p>
+        </div>
+        <div class="icon-title">
+          <i class="material-icons"> history</i>
+        </div>
+      </div>
+    </div>
+
+    <div class="inputNum2">
+      <input placeholder="" type="text" id="action" class="inputFeild" />
+    </div>
+    <div class="inputNum" id="input">
+        0
+    </div>
+
+    <div class="box-numbers"></div>
+      <div class="first-row">
+        <button id="inputValue">%</button>
+        <button id="default">CE</button>
+        <button id="reset">C</button>
+        <button id="backArrow" ><i class="material-icons">arrow_back</i></button>
+      </div>
+          
+      <div class="second-row">
+        <button id="fractionOperation"><sup>1</sup>&frasl;<sub>x</sub></button>
+        <button id="squareNum"><sub>x</sub><sup>2</sup> </button>
+        <button id="inputSqaureOperation">&#8730</button>
+        <button id="inputValue">/</button>
+      </div>
+
+      <div class="third-row">
+        <button id="inputValue">7</button>
+        <button id="inputValue">8</button>
+        <button id="inputValue">9</button>
+        <button id="inputValue" class="last-box">*</button>
+      </div>
+
+      <div class="third-row">
+        <button id="inputValue">4</button>
+        <button id="inputValue">5</button>
+        <button id="inputValue">6</button>
+        <button id="inputValue" class="last-box">-</button>
+      </div>
+
+     <div class="third-row">
+        <button id="inputValue">1</button>
+        <button id="inputValue">2</button>
+        <button id="inputValue">3</button>
+        <button id="inputValue" class="last-box">+</button>
+      </div>
+
+     <div class="final-row">
+        <button id="signOperations"><sup>+</sup>&frasl;<sub>-</sub></button>
+        <button id="inputValue">0</button>
+        <button id="inputValue">.</button>
+        <button id="calculate" class="last-box">=</button>
+      </div>
+
+
+    </div>
+  </body>
+  <script src="scrpit.js"></script>
+</html>

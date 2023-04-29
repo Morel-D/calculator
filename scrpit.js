@@ -24,6 +24,11 @@ var signOpertions = document.getElementById("signOperations");
 // get the fraction operation button
 var fractionBtn = document.getElementById("fractionOperation");
 
+
+
+// operations....
+
+
 // display the fraction operation
 fractionBtn.addEventListener("click", () => {
   1 / inputValues.value;
@@ -41,6 +46,24 @@ deleteLastValue.addEventListener("click", () => {
 resultValues.forEach((result) => {
   result.addEventListener("click", () => {
     inputValues.value += result.innerText;
+  });
+});
+
+
+
+// Loop through all the buttons and get the input values......... 2
+resultValues.forEach((result) => {
+  result.addEventListener("click", () => {
+    if(isNaN(result.innerText))
+    {
+      if(inputField.innerText != 0)
+      {
+        inputValues.value = inputField.innerText+result.innerText;
+        inputField.innerText = 0;
+      }
+    }else {
+      console.log("Number");
+    }
   });
 });
 

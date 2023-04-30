@@ -24,6 +24,16 @@ var signOpertions = document.getElementById("signOperations");
 // get the fraction operation button
 var fractionBtn = document.getElementById("fractionOperation");
 
+// get history
+// var op = document.getElementById('operation');
+// var ans = document.getElementById('answer');
+
+
+// get menus
+var menus = document.getElementById('menu');
+
+var histories = [];
+
 
 
 // operations....
@@ -69,10 +79,19 @@ resultValues.forEach((result) => {
 
 // perform the calculation once the input field != null
 calculate.addEventListener("click", () => {
+  var liHist = document.createElement('li');
   if (inputField.innerText == 0 && inputValues.value == "") {
     return 0;
   } else {
     inputField.innerText = eval(inputValues.value);
+    const history = { "operation": inputValues.value, "answer": inputField.innerText }
+    histories.push(history);
+    console.log(histories);
+    histories.forEach((e) => { 
+
+      liHist.innerHTML = e.operation +" = "+ e.answer;
+      menus.appendChild(liHist);
+     });
     inputValues.value = "";
   }
 });
@@ -93,3 +112,10 @@ squareRootBtn.addEventListener("click", () => {
 squareBtn.addEventListener("click", () => {
   inputField.innerText = Math.pow(inputValues.value, 2);
 });
+
+
+// History sheet 
+
+document.getElementById('hisBtn').addEventListener('click', () => {
+  window.location.hash = "#bottom-sheet";
+})

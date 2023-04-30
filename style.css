@@ -230,3 +230,9 @@ html {
     height: 1px;
     width: 1px;
 }
+
+ul, li {
+	list-style-type: none;
+	text-align: end;
+	/* color: ; */
+}

@@ -89,7 +89,7 @@ calculate.addEventListener("click", () => {
     console.log(histories);
     histories.forEach((e) => { 
 
-      liHist.innerHTML = e.operation +" = "+ e.answer;
+      liHist.innerHTML = e.operation +" = <br/>"+ "<b>"+e.answer+"</b>";
       menus.appendChild(liHist);
      });
     inputValues.value = "";
